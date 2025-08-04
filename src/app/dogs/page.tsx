@@ -19,4 +19,4 @@ export default function DogsPage() {
       </div>
     </main>
   );
-}cat: src/app/dogs/page.tsx: No such file or directory
+}
