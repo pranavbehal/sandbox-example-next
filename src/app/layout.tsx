@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,8 +29,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navigation />
         {children}
       </body>
     </html>
+  );
+}
+
+function Navigation() {
+  const pathname = usePathname();
+
+  return (
+    <nav role="navigation" className="main-nav">
+      <Link href="/cats" className={`nav-item ${pathname === "/cats" ? "active" : ""}`} aria-current={pathname === "/cats" ? "page" : undefined}>Cats</Link>
+      <Link href="/dogs" className={`nav-item ${pathname === "/dogs" ? "active" : ""}`} aria-current={pathname === "/dogs" ? "page" : undefined}>Dogs</Link>
+      <Link href="/squirrels" className={`nav-item ${pathname === "/squirrels" ? "active" : ""}`} aria-current={pathname === "/squirrels" ? "page" : undefined}>Squirrels</Link>
+    </nav>
   );
 }

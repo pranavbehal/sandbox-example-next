@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Navigation styles */
+.main-nav {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  gap: 10px; /* Space between nav items */
+  justify-content: center; /* Center items horizontally */
+}
+
+.nav-item {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff; /* Default link color */
+  font-weight: bold;
+}
+
+.nav-item.active {
+  color: #0056b3; /* Darker color for active link */
+  border-bottom: 2px solid #0056b3; /* Highlight active link */
+}
+
+/* Basic responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .main-nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items when stacked */
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Adjust vertical margin */
+  }
+}
