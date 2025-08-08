@@ -1,0 +1,8 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 13V11C2 6.02944 6.02944 2 11 2H13C17.9706 2 22 6.02944 22 11V13C22 17.9706 17.9706 22 13 22H11C6.02944 22 2 17.9706 2 13Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 2V22" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.82843 4.82843L8.24264 6.24264" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.7574 17.7574L17.1716 19.1716" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.82843 6.82843L19.1716 21.1716" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 11C2 13.9706 4.02944 16 7 16H9C11.9706 16 14 13.9706 14 11V9C14 6.02944 11.9706 4 9 4H7C4.02944 4 2 6.02944 2 9V11Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>cat: public/zebra.svg: No such file or directory
