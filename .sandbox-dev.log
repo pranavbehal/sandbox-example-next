@@ -290,3 +290,65 @@ Import trace for requested module:
  ✓ Compiled /favicon.ico in 140ms (562 modules)
  GET /favicon.ico 200 in 222ms
  GET / 200 in 118ms
+
+> sandbox-example-next@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.3.4
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.142:3000
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 1331ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.4s (821 modules)
+ GET / 200 in 5791ms
+ ⚠ Cross origin request detected from sb-2u0cibxb5lvk.vercel.run to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 756ms (474 modules)
+ GET /favicon.ico 200 in 851ms
+ ✓ Compiled in 293ms (345 modules)
+ GET / 200 in 53ms
+ ✓ Compiled in 128ms (345 modules)
+ GET / 200 in 15ms
+ ○ Compiling /penguins ...
+ ✓ Compiled /penguins in 1145ms (922 modules)
+ GET /penguins 200 in 1308ms
+ GET /penguins 200 in 39ms
+ ✓ Compiled in 154ms (402 modules)
+ GET / 200 in 19ms
+ ✓ Compiled in 883ms (932 modules)
+ GET / 200 in 119ms
+ ✓ Compiled in 1062ms (932 modules)
+ GET / 200 in 44ms
+ GET / 200 in 76ms
+ ✓ Compiled /favicon.ico in 174ms (535 modules)
+ GET /favicon.ico 200 in 265ms
+ GET /favicon.ico 200 in 4ms
+ ✓ Compiled /_not-found in 194ms (929 modules)
+ GET /penguin 404 in 295ms
+ GET /penguins 200 in 63ms
+ GET /favicon.ico 200 in 27ms
+ GET /penguins 200 in 38ms
+ GET / 200 in 44ms
+ GET /penguins 200 in 31ms
+ GET /penguins 200 in 37ms
+ GET /favicon.ico 200 in 23ms
+ GET /favicon.ico 200 in 4ms
+ ✓ Compiled in 395ms (952 modules)
+ GET / 200 in 61ms
+ GET /penguins 200 in 17ms
+ ✓ Compiled in 210ms (952 modules)
+ GET / 200 in 38ms
+ GET /penguins 200 in 15ms
+ ✓ Compiled in 198ms (939 modules)
+ GET / 200 in 36ms
+ GET /penguins 200 in 15ms
+ GET /penguins 200 in 72ms
+ GET /penguins 200 in 41ms
