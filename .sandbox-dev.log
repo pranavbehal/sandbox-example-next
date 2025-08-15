@@ -371,3 +371,26 @@ https://nextjs.org/telemetry
  ✓ Compiled / in 5.3s (821 modules)
  GET / 200 in 5625ms
  ✓ Compiled in 266ms (345 modules)
+
+> sandbox-example-next@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.3.4
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.102:3000
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 1270ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.2s (821 modules)
+ GET / 200 in 5553ms
+ ○ Compiling /favicon.ico ...
+ ⚠ Cross origin request detected from sb-16n1xprikpk9.vercel.run to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /favicon.ico in 1162ms (474 modules)
+ GET /favicon.ico 200 in 1273ms

@@ -1,0 +1,4 @@
+diff a/b/src/app/layout.tsx b/b/src/app/layout.tsx	(rejected hunks)
+@@ -1,1 +1,2 @@
++import type { Metadata } from "next";
+ import { Geist, Geist_Mono } from "next/font/google";
