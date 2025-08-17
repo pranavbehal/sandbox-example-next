@@ -1,116 +1,75 @@
 # Product Requirements Document: Soccer Club Ticketing Website
 
 ## 1. Introduction
+This document outlines the requirements for a new ticketing website designed specifically for a soccer club. The primary goal is to provide a seamless and efficient platform for fans to purchase match tickets, season passes, and potentially other club-related events.
 
-### 1.1 Purpose
-The purpose of this document is to outline the requirements for a new online ticketing website for a soccer club. This platform will enable fans to easily browse upcoming matches, select seats, purchase tickets, and manage their bookings. The goal is to enhance the fan experience, streamline the ticketing process, and increase ticket sales for the club.
+## 2. Goals
+*   **Enhance Fan Experience:** Provide an intuitive and user-friendly interface for ticket purchasing.
+*   **Increase Ticket Sales:** Streamline the buying process to maximize conversion rates.
+*   **Improve Operational Efficiency:** Automate ticket management, reduce manual workload, and minimize errors.
+*   **Data Collection & Analytics:** Gather valuable fan data for marketing and club insights.
+*   **Security & Reliability:** Ensure a secure and reliable platform for transactions and personal data.
 
-### 1.2 Scope
-This PRD covers the development of the user-facing ticketing website and the essential backend functionalities required to support ticket sales, seat management, and user accounts. It includes features for match browsing, ticket selection, secure payment processing, order confirmation, and user account management. Integration with existing club systems (e.g., CRM, stadium management) is out of scope for the initial release but will be considered for future phases.
+## 3. Target Audience
+*   **Club Supporters:** Existing fans who regularly attend matches.
+*   **New Fans:** Individuals interested in attending a single match or exploring the club.
+*   **Tourists/Visitors:** International or domestic visitors looking to experience a live soccer match.
+*   **Corporate Clients:** Businesses interested in bulk ticket purchases or hospitality packages.
 
-### 1.3 Goals
-*   **Improve Fan Convenience:** Provide a user-friendly and accessible platform for ticket purchases 24/7.
-*   **Increase Ticket Sales:** Optimize the purchasing flow to reduce abandonment rates and encourage sales.
-*   **Streamline Operations:** Automate ticket allocation and validation processes.
-*   **Enhance Data Collection:** Gather valuable fan data for marketing and personalized experiences.
-*   **Ensure Security:** Implement robust security measures for user data and payment transactions.
+## 4. Features
+### 4.1 User Authentication & Profiles
+*   User registration and login (email, social media options).
+*   Personalized user profiles (order history, favorite seats, preferences).
+*   Password recovery.
 
-## 2. User Stories / Use Cases
+### 4.2 Event & Match Listing
+*   Clear display of upcoming matches (date, time, opponent, venue).
+*   Ability to filter by competition, date, or opponent.
+*   Information on other club events (e.g., stadium tours, fan meet-and-greets).
 
-### 2.1 Fan (Logged In/Guest)
-*   As a fan, I want to view a list of upcoming matches so I can see what games are available.
-*   As a fan, I want to view detailed match information (date, time, opponent, venue) so I can make an informed decision.
-*   As a fan, I want to see a stadium seating map so I can choose my preferred seating section.
-*   As a fan, I want to select specific seats and the quantity of tickets so I can purchase for myself and others.
-*   As a fan, I want to view the total price, including any fees, before proceeding to payment.
-*   As a fan, I want to securely pay for my tickets using various payment methods (credit card, debit card) so my transaction is safe.
-*   As a fan, I want to receive a confirmation email with my e-tickets/QR codes after purchase so I have proof of purchase and entry.
-*   As a fan, I want to create and manage an account so I can view my past bookings, update personal details, and save payment information.
-*   As a fan, I want to reset my password if I forget it.
-*   As a fan, I want to download or print my e-tickets from my account.
+### 4.3 Seat Selection & Pricing
+*   Interactive stadium seating plan with real-time seat availability.
+*   Multiple ticket categories (e.g., adult, child, senior, student, VIP).
+*   Dynamic pricing capabilities based on demand, opponent, or seat location.
+*   Ability to purchase individual match tickets, season passes, and multi-match packages.
 
-### 2.2 Administrator (Club Staff)
-*   As an administrator, I want to manage match schedules (add, edit, delete) so the website is always up-to-date.
-*   As an administrator, I want to define seating capacities and pricing for different sections of the stadium for each match.
-*   As an administrator, I want to view real-time ticket sales data for each match.
-*   As an administrator, I want to manage user accounts (view, suspend) for customer support.
-*   As an administrator, I want to generate reports on ticket sales and revenue.
+### 4.4 Shopping Cart & Checkout
+*   Intuitive shopping cart for managing selected tickets.
+*   Secure payment gateway integration (credit/debit cards, mobile payment options).
+*   Clear breakdown of ticket prices, fees, and total cost.
+*   Order confirmation and e-ticket delivery (email, in-app).
 
-## 3. Functional Requirements
+### 4.5 Digital Ticketing
+*   Mobile-friendly e-tickets with QR/barcode scanning for entry.
+*   Option to add tickets to mobile wallets (Apple Wallet, Google Pay).
+*   Ticket transfer functionality (send tickets to other users).
 
-### 3.1 User Authentication & Management
-*   F1: User registration with email verification.
-*   F2: User login/logout functionality.
-*   F3: Password recovery (forgot password).
-*   F4: User profile management (update personal information).
-*   F5: Order history viewing for logged-in users.
+### 4.6 Admin Panel
+*   Event and match management (create, edit, delete).
+*   Ticket inventory and pricing management.
+*   User management and order tracking.
+*   Reporting and analytics on sales, attendance, and user behavior.
 
-### 3.2 Match & Event Management
-*   F6: Display list of upcoming matches with essential details.
-*   F7: Detailed match page with date, time, venue, opponent, and match description.
-*   F8: Integration of interactive stadium seating map for seat selection.
-*   F9: Real-time seat availability updates on the seating map.
-*   F10: Ability to set different pricing tiers for various seating sections.
+### 4.7 Notifications
+*   Email and/or SMS notifications for purchase confirmation, match reminders, and important updates.
 
-### 3.3 Ticket Selection & Purchase
-*   F11: Users can select multiple seats for a single transaction.
-*   F12: Shopping cart functionality to hold selected tickets before checkout.
-*   F13: Calculation of total cost, including taxes and service fees.
-*   F14: Secure payment gateway integration (e.g., Stripe, PayPal).
-*   F15: Support for major credit/debit cards.
-*   F16: Order confirmation page and email with ticket details and unique QR/barcode.
-*   F17: Generation of printable/downloadable e-tickets (PDF format).
+## 5. User Stories
+*   As a first-time fan, I want to easily find and purchase a ticket for the next home game so I can experience a match.
+*   As a season ticket holder, I want to renew my season pass quickly and conveniently online so I don't miss any games.
+*   As a parent, I want to buy multiple tickets for my family and choose seats together so we can sit as a group.
+*   As a club administrator, I want to easily update ticket prices and availability for an upcoming match so I can respond to demand.
+*   As a fan, I want to receive my e-ticket on my phone and use it for entry so I don't have to print anything.
 
-### 3.4 Admin Panel (Basic)
-*   F18: Secure login for administrators.
-*   F19: CRUD operations for matches (Create, Read, Update, Delete).
-*   F20: Basic reporting on ticket sales per match/section.
+## 6. Technical Requirements
+*   **Scalability:** The platform must handle high traffic volumes, especially during peak ticket sales periods.
+*   **Security:** Adherence to PCI DSS compliance for payment processing and robust data protection measures.
+*   **Integrations:** Potential integrations with existing club CRM, marketing platforms, and stadium access control systems.
+*   **Performance:** Fast loading times and responsive design across all devices.
+*   **Technology Stack:** (To be determined, but consider modern web frameworks, cloud infrastructure).
 
-## 4. Non-Functional Requirements
-
-### 4.1 Performance
-*   NFR1: Page load time for critical pages (home, match details, checkout) should be under 3 seconds under normal load.
-*   NFR2: The system should handle concurrent users for peak sale periods (e.g., 500 simultaneous users without degradation).
-
-### 4.2 Security
-*   NFR3: All sensitive data (passwords, payment information) must be encrypted both in transit (SSL/TLS) and at rest.
-*   NFR4: Adherence to PCI DSS compliance for payment processing.
-*   NFR5: Protection against common web vulnerabilities (e.g., XSS, CSRF, SQL injection).
-
-### 4.3 Usability
-*   NFR6: Intuitive and user-friendly interface.
-*   NFR7: Responsive design for optimal viewing on desktop, tablet, and mobile devices.
-*   NFR8: Clear error messages and guidance for users.
-
-### 4.4 Reliability
-*   NFR9: 99.5% uptime for the ticketing platform.
-*   NFR10: Robust error handling and logging.
-
-### 4.5 Scalability
-*   NFR11: The architecture should support future growth in user base and match volume.
-
-## 5. Technical Requirements
-
-### 5.1 Technology Stack
-*   **Frontend:** React/Angular/Vue.js (to be decided)
-*   **Backend:** Node.js/Python (Django/Flask)/Ruby on Rails (to be decided)
-*   **Database:** PostgreSQL/MySQL (for relational data), Redis (for caching seat availability)
-*   **Cloud Platform:** AWS/Google Cloud/Azure (to be decided)
-
-### 5.2 APIs & Integrations
-*   TR1: Payment Gateway API (e.g., Stripe API, PayPal API).
-*   TR2: Email Service API (e.g., SendGrid, Mailgun) for transactional emails.
-*   TR3: (Future consideration) Integration with Club CRM for fan data synchronization.
-
-## 6. Open Questions / Future Considerations
-
-*   **Payment Methods:** Should we support additional payment methods (e.g., Apple Pay, Google Pay, local payment options)?
-*   **Season Tickets:** How will season ticket holders be managed? (Potential future phase)
-*   **Promotions/Discounts:** Implementation of discount codes or promotional offers.
-*   **Refunds/Cancellations:** Policy and functionality for ticket refunds or exchanges.
-*   **Multi-language Support:** Is multi-language support required for international fans?
-*   **Accessibility:** Adherence to WCAG guidelines for accessibility.
-*   **SMS Notifications:** Option for users to receive ticket details via SMS.
-*   **Analytics:** Integration with analytics tools (e.g., Google Analytics) for user behavior tracking.
-*   **Queue System:** For high-demand ticket sales, consider a virtual queue system.
-*   **Integrations:** Integration with turnstile/access control systems at the stadium.
+## 7. Future Considerations
+*   Merchandise sales integration.
+*   Fan loyalty program integration.
+*   Secondary ticket marketplace.
+*   Multi-language support.
+*   API for third-party integrations (e.g., travel agencies).
