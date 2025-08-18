@@ -43,6 +43,13 @@ export default function Navigation() {
       >
         Apes
       </Link>
+          <Link
+        href="/lemurs"
+        className={`nav-item ${pathname === "/lemurs" ? "active" : ""}`}
+        aria-current={pathname === "/lemurs" ? "page" : undefined}
+      >
+        Lemurs
+      </Link>
     </nav>
   );
 }
