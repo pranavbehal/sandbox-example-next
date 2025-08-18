@@ -37,6 +37,13 @@ export default function Navigation() {
         Walruses
       </Link>
           <Link
+        href="/sharks"
+        className={`nav-item ${pathname === "/sharks" ? "active" : ""}`}
+        aria-current={pathname === "/sharks" ? "page" : undefined}
+      >
+        Sharks
+      </Link>
+          <Link
         href="/apes"
         className={`nav-item ${pathname === "/apes" ? "active" : ""}`}
         aria-current={pathname === "/apes" ? "page" : undefined}
