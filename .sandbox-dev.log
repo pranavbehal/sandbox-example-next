@@ -560,3 +560,21 @@ https://nextjs.org/telemetry
 
  ✓ Ready in 2.4s
  ○ Compiling / ...
+
+> sandbox-example-next@0.1.0 dev
+> next dev --port 3000 --hostname 0.0.0.0
+
+   ▲ Next.js 15.3.4
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 2.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 10.7s (821 modules)
+ GET / 200 in 11382ms
